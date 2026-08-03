@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0-rc.1 — 2026-07-31
+## 0.1.0 — 2026-08-03
 
 - Prepared a local, synthetic-only public-release candidate.
 - Added deterministic fictional-city datasets, federated training, evidence logging, JSON/ONNX export, browser-local inference, bounded what-if analysis, tests, and public collaboration files.

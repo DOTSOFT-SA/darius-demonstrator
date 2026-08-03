@@ -1,0 +1,13 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #17233b; background: #edf3f0; }
+body { margin: 0; }
+main { max-width: 920px; margin: 0 auto; padding: 4rem 1.5rem; }
+h1 { font-size: clamp(2.4rem, 7vw, 5rem); line-height: .95; margin: .4rem 0 1rem; }
+h2 { margin-top: 0; }
+.eyebrow { letter-spacing: .15em; font-weight: 800; color: #a0412d; }
+.card { background: #fff; border: 1px solid #ccd8d2; border-radius: 14px; padding: 1.25rem; box-shadow: 0 8px 25px #18372812; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+input { width: 100%; margin: 1rem 0; accent-color: #196b52; }
+button { border: 0; border-radius: 999px; background: #196b52; color: white; padding: .8rem 1.2rem; font-weight: 700; cursor: pointer; }
+button:disabled { cursor: wait; opacity: .6; }
+pre { white-space: pre-wrap; min-height: 6rem; }
+.status { font-weight: 700; }

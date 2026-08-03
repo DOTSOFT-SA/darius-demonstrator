@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DARIUS Synthetic Browser Edge Client</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">SYNTHETIC-ONLY · NON-PRODUCTION</p>
+      <h1>DARIUS Browser Edge Client</h1>
+      <p>Compare browser-local JSON and ONNX inference, then explore a bounded occupancy what-if. No input leaves this browser.</p>
+      <section class="card">
+        <label for="delta">Occupancy sensitivity: <output id="delta-value">0%</output></label>
+        <input id="delta" type="range" min="-15" max="15" value="0" step="1" />
+        <button id="run" disabled>Loading local runtimes…</button>
+      </section>
+      <section class="grid">
+        <article class="card"><h2>JSON result</h2><pre id="json-result">Waiting…</pre></article>
+        <article class="card"><h2>ONNX result</h2><pre id="onnx-result">Waiting…</pre></article>
+      </section>
+      <p id="parity" class="status" role="status">Loading JSON model and ONNX runtime…</p>
+      <details><summary>Boundaries and non-claims</summary><p>The slider is capped at ±15 percentage points. This is sensitivity analysis, not a causal estimate or policy forecast. The model and example are trained and generated only from fictional synthetic cities.</p></details>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -107,7 +107,7 @@ authentication, and deployment hardening remain required outside loopback.
 | Publication PR | `https://github.com/DOTSOFT-SA/darius-demonstrator/pull/1` |
 | Initial publication merge | `012ec30bc69647031731311eac5b3aad0b3635e5` |
 | License | `MIT License — LICENSE` |
-| Release | `v0.1.0 — to be created from the reviewed main-branch merge commit` |
+| Release | `v0.1.0 — to be created from the final verified main commit` |
 | README | `README.md` |
 | Synthetic data | `synthetic-data/generated/` and `synthetic-data/manifests/manifest.json` |
 | Contribution process | `CONTRIBUTING.md` |

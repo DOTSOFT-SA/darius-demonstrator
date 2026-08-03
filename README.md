@@ -1,14 +1,16 @@
-# DARIUS controlled demonstrator
+<p align="center">
+  <img
+    src="docs/assets/darius-logo.png"
+    alt="DARIUS, dAIEDGE, European Union funding, and DOTSOFT"
+    width="900"
+  >
+</p>
 
-> **Publication status:** DOTSOFT S.A. has authorised publication of this
-> synthetic-only demonstrator under the MIT License. The canonical public
-> repository is
-> [DOTSOFT-SA/darius-demonstrator](https://github.com/DOTSOFT-SA/darius-demonstrator).
-> This remains non-production demonstrator software.
+# DARIUS Demonstrator
 
-DARIUS demonstrates a small, inspectable federated-learning path for fictional parking-load environments. It generates independent synthetic data, trains a three-client federated classifier, records orchestration evidence, exports synthetic-only JSON and ONNX models, and runs both model formats locally in a browser.
+**Publication status:** DOTSOFT S.A. has published the DARIUS synthetic-data demonstrator under the [MIT License](LICENSE). The canonical public repository is [DOTSOFT-SA/darius-demonstrator](https://github.com/DOTSOFT-SA/darius-demonstrator).
 
-This is a controlled technical demonstrator. It is not production software, a municipal deployment, legal or regulatory certification, evidence of GDPR compliance, a formal accessibility claim, a fairness assessment, or validation on real municipal data.
+DARIUS demonstrates an inspectable and reproducible federated-learning workflow for fictional parking-load environments. It generates independent synthetic data, trains a three-client federated classifier, records orchestration evidence, exports JSON and ONNX models, and runs both model formats locally in a browser.
 
 ## Components and flow
 
@@ -67,7 +69,7 @@ Install the locked browser dependencies:
 npm ci --prefix browser-edge-client
 ```
 
-Dependencies are intentionally not vendored. Review `THIRD_PARTY_NOTICES.md` and the resolved dependency tree before publication.
+Dependencies are installed through the declared package files. Their applicable notices are documented in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Generate synthetic data
 
@@ -93,7 +95,7 @@ Expected results:
 - `browser-edge-client/public/models/synthetic_softmax.onnx`;
 - terminal JSON containing `"status": "complete"` and `"evidence_verified": true`.
 
-The runner is a deterministic, single-process smoke path. It demonstrates the same local-training and weighted-aggregation logic without pretending that loopback processes add security properties.
+The runner provides a deterministic, single-process reproduction path using the same local-training and weighted-aggregation logic as the networked workflow.
 
 ## Run the networked Flower workflow
 
@@ -167,7 +169,7 @@ Flower then runs three weighted FedAvg rounds and writes
 example counts, and metrics; they do not send CSV rows. The Browser Edge Client
 is a separate inference UI and is not a training SuperNode.
 
-This loopback example does **not** provide transport security, client authentication, secure aggregation, differential privacy, Byzantine robustness, or deployment hardening.
+The documented launcher uses local loopback connections for reproducible multi-process execution. For communication across separate machines, configure TLS and authenticated Flower connections according to the deployment environment.
 
 ## Launch the Browser Edge Client
 
@@ -190,7 +192,7 @@ Move the bounded ±15-percentage-point slider and select **Run both local format
 5. reports class/probability parity;
 6. makes no network request after loading application assets.
 
-The what-if changes selected occupancy-history fields within documented bounds. It is sensitivity analysis, not causal policy impact.
+The what-if applies a bounded sensitivity analysis to selected occupancy-history fields and displays the corresponding model response.
 
 ## Test and build
 
@@ -208,7 +210,7 @@ For a clean-room reproduction sequence, follow [docs/reproduction-guide.md](docs
 - Flower waits for nodes: confirm all three SuperNodes are connected to the SuperLink Fleet API at port 9092.
 - `Required local ports are already in use`: stop old Flower processes with `Ctrl+C` or pass an unused range, for example `--base-port 19091`.
 - `flwr run` cannot find `darius-local`: use the one-command launcher, or recreate the documented `$env:FLWR_HOME\config.toml`.
-- The `--insecure` warning is expected only for this loopback demonstration. Do not use insecure mode across machines or in production.
+- The `--insecure` option is used for local loopback execution. Configure TLS and authenticated connections before running Flower across separate machines.
 - Browser model request returns 404: launch Vite from the package root using the documented `--prefix` command; do not open `index.html` directly.
 - Page stays at `Loading…` or reports an ONNX runtime error: stop the Vite process, run `npm ci --prefix browser-edge-client`, restart it, and force-refresh the page with `Ctrl+F5`.
 - ONNX WASM fails under a restrictive browser policy: use a current Chromium or Firefox build and confirm Vite is serving the app over loopback HTTP.
@@ -220,14 +222,13 @@ Every included CSV is generated from constants, equations, and fixed pseudorando
 
 Do not add real, sampled, perturbed, anonymised, or pseudonymised municipal rows to this repository. See [privacy and synthetic data](docs/privacy-and-synthetic-data.md).
 
-## Limitations and non-claims
+## Demonstrator configuration
 
-This package uses a small softmax model and a controlled three-client topology. Results are illustrative and distribution shifts are deliberately constructed. It makes no claim of production readiness, real-world utility, demographic fairness, formal WCAG conformance, legal compliance, secure aggregation, differential privacy, or causal effect. See [limitations](docs/limitations.md).
+This release uses a compact softmax classifier and a controlled three-client topology to provide a fast and reproducible federated-learning workflow. The experimental configuration, dataset characteristics, evaluation boundaries, and interpretation guidance are documented in [docs/limitations.md](docs/limitations.md).
 
 ## License, contributions, and security
 
-This demonstrator is licensed under the [MIT License](LICENSE). The license
-and public release of this controlled package are authorised by DOTSOFT S.A.
+The DARIUS Demonstrator is published by DOTSOFT S.A. under the [MIT License](LICENSE).
 
 Contributors can use the public issue and pull-request templates. All proposed
 changes are reviewed before acceptance; see

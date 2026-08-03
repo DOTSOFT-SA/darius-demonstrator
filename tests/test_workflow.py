@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class WorkflowTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        reproduce(rounds=2)
+        reproduce(rounds=3)
 
     def test_evidence_chain(self) -> None:
         self.assertTrue(verify_evidence(ROOT / "evidence" / "events.jsonl"))

@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class PackageTests(unittest.TestCase):
     def test_required_public_files_exist(self) -> None:
         required = [
-            "README.md", "LICENSE", "CONTRIBUTING.md", "SECURITY.md", "THIRD_PARTY_NOTICES.md",
+            ".gitattributes", "README.md", "LICENSE", "CONTRIBUTING.md", "SECURITY.md", "THIRD_PARTY_NOTICES.md",
             "browser-edge-client/package-lock.json",
             "CHANGELOG.md", "RELEASE_READINESS.md", ".github/ISSUE_TEMPLATE/bug_report.md",
             ".github/ISSUE_TEMPLATE/feature_request.md", ".github/pull_request_template.md",

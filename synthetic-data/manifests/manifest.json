@@ -1,0 +1,136 @@
+{
+  "cities": {
+    "synthetic_city_alpha": {
+      "row_counts": {
+        "test": 192,
+        "train": 672,
+        "val": 192
+      },
+      "seed": 104729
+    },
+    "synthetic_city_beta": {
+      "row_counts": {
+        "test": 192,
+        "train": 672,
+        "val": 192
+      },
+      "seed": 130363
+    },
+    "synthetic_city_gamma": {
+      "row_counts": {
+        "test": 192,
+        "train": 672,
+        "val": 192
+      },
+      "seed": 155921
+    }
+  },
+  "feature_order_hash": "8b6c3246a2cce1fb019d55698edbd7c9fd307d89b31b31e4b8706e5f099d8a34",
+  "files": [
+    {
+      "path": "synthetic-data/generated/synthetic_city_alpha/metadata.json",
+      "sha256": "573a60e0b80c78ce457048699911696a4eeeb4d024aa6b9b79e25545a5871633"
+    },
+    {
+      "class_counts": {
+        "high": 9,
+        "low": 150,
+        "medium": 33
+      },
+      "path": "synthetic-data/generated/synthetic_city_alpha/test.csv",
+      "rows": 192,
+      "sha256": "b59dba08ec9220075e3ab46cb7c3fc128aa4b5484077fb94168d69addec271c4"
+    },
+    {
+      "class_counts": {
+        "high": 28,
+        "low": 542,
+        "medium": 102
+      },
+      "path": "synthetic-data/generated/synthetic_city_alpha/train.csv",
+      "rows": 672,
+      "sha256": "8c9ae45b159ca514d46bc33ab5d302132bf16a551cf291d932a8454e8fbd3f13"
+    },
+    {
+      "class_counts": {
+        "high": 11,
+        "low": 149,
+        "medium": 32
+      },
+      "path": "synthetic-data/generated/synthetic_city_alpha/val.csv",
+      "rows": 192,
+      "sha256": "c605e1d43b72835a947d92828d0d994a91c146f7504bbde91e8d7c0cb49bc8f1"
+    },
+    {
+      "path": "synthetic-data/generated/synthetic_city_beta/metadata.json",
+      "sha256": "392c3dd8f9977d99d5758e7687aad6dfbd0412e4bde60f89d21847c18f500b8b"
+    },
+    {
+      "class_counts": {
+        "high": 24,
+        "low": 40,
+        "medium": 128
+      },
+      "path": "synthetic-data/generated/synthetic_city_beta/test.csv",
+      "rows": 192,
+      "sha256": "b6d23077d8ce9265bcdb653da1381501545de7fc82e93e475ac04e0c5418d4c5"
+    },
+    {
+      "class_counts": {
+        "high": 60,
+        "low": 234,
+        "medium": 378
+      },
+      "path": "synthetic-data/generated/synthetic_city_beta/train.csv",
+      "rows": 672,
+      "sha256": "3f77f8cd72deed00f0aa68ec34d6cb2af42340db1bad83b495378ec5805e7749"
+    },
+    {
+      "class_counts": {
+        "high": 24,
+        "low": 45,
+        "medium": 123
+      },
+      "path": "synthetic-data/generated/synthetic_city_beta/val.csv",
+      "rows": 192,
+      "sha256": "68f9a18a040c531502974764403640fa895932261f39f357d896427a932aaa8d"
+    },
+    {
+      "path": "synthetic-data/generated/synthetic_city_gamma/metadata.json",
+      "sha256": "209fdf4f2a5d1428802d89b2c790fe690e295c11b4c5e4564abd43cc29587944"
+    },
+    {
+      "class_counts": {
+        "high": 21,
+        "low": 114,
+        "medium": 57
+      },
+      "path": "synthetic-data/generated/synthetic_city_gamma/test.csv",
+      "rows": 192,
+      "sha256": "825b869fe5ea7418881edcf3e02ab756402464c8f619a637720f6ecf2d021258"
+    },
+    {
+      "class_counts": {
+        "high": 49,
+        "low": 415,
+        "medium": 208
+      },
+      "path": "synthetic-data/generated/synthetic_city_gamma/train.csv",
+      "rows": 672,
+      "sha256": "ffa3e52cec0dff2a18f9e9d6a4b8dc5f7300e8b749c8a00c28401f91d00c7421"
+    },
+    {
+      "class_counts": {
+        "high": 20,
+        "low": 112,
+        "medium": 60
+      },
+      "path": "synthetic-data/generated/synthetic_city_gamma/val.csv",
+      "rows": 192,
+      "sha256": "320af8d1927ab1899af4180aad63f2fafb15e9789ab9e96bbffd6257c2f4f076"
+    }
+  ],
+  "manifest_version": 1,
+  "provenance": "Generated independently from documented mathematical rules; no municipal rows or artifacts are inputs.",
+  "schema_version": "phase7_load_core_plus_lags_v1"
+}

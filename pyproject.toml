@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "darius-flower-demonstrator"
+version = "0.1.0"
+description = "Synthetic-only DARIUS federated learning demonstrator"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+  "flwr>=1.32,<1.33",
+  "numpy>=1.26,<3",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["darius_fl_app", "darius_demo"]
+
+[tool.flwr.app]
+publisher = "dotsoft"
+fab-include = [
+  "darius_fl_app/**/*.py",
+  "darius_demo/**/*.py",
+  "browser-edge-client/public/models/synthetic_softmax.json",
+]
+
+[tool.flwr.app.components]
+serverapp = "darius_fl_app.server_app:app"
+clientapp = "darius_fl_app.client_app:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 3

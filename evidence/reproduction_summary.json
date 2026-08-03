@@ -1,0 +1,39 @@
+{
+  "artifacts": {
+    "json": "8fe5f9b2883c4c159333ef02c1ea8b234fe63828e9f125556a5e65706ad82a89",
+    "onnx": "7f10da29646ee961f83d757b9a9861f09b930ac73fbe60ca3fe50bef8e50a965"
+  },
+  "city_test_accuracy": {
+    "synthetic_city_alpha": 0.859375,
+    "synthetic_city_beta": 0.677083,
+    "synthetic_city_gamma": 0.682292
+  },
+  "dataset_file_count": 12,
+  "history": [
+    {
+      "round": 1,
+      "validation_accuracy": {
+        "synthetic_city_alpha": 0.828125,
+        "synthetic_city_beta": 0.640625,
+        "synthetic_city_gamma": 0.703125
+      }
+    },
+    {
+      "round": 2,
+      "validation_accuracy": {
+        "synthetic_city_alpha": 0.84375,
+        "synthetic_city_beta": 0.640625,
+        "synthetic_city_gamma": 0.713542
+      }
+    },
+    {
+      "round": 3,
+      "validation_accuracy": {
+        "synthetic_city_alpha": 0.854167,
+        "synthetic_city_beta": 0.640625,
+        "synthetic_city_gamma": 0.729167
+      }
+    }
+  ],
+  "rounds": 3
+}

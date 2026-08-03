@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.tmp-tests/
+.determinism-a/
+.determinism-b/
+node_modules/
+browser-edge-client/dist/
+.flower-runtime/
+*.fab
+*.log
+.DS_Store

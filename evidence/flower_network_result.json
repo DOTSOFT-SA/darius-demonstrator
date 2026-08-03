@@ -1,0 +1,14 @@
+{
+  "accepted_clients": 3,
+  "bias_shape": [
+    3
+  ],
+  "failures": 0,
+  "flower_runtime": "SuperLink/SuperNode",
+  "round": 3,
+  "synthetic_only": true,
+  "weights_shape": [
+    24,
+    3
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "city_id": "synthetic_city_alpha",
+  "class_counts": {
+    "high": 48,
+    "low": 841,
+    "medium": 167
+  },
+  "class_mapping": {
+    "high": 2,
+    "low": 0,
+    "medium": 1
+  },
+  "feature_names": [
+    "occupancy_rate",
+    "active_sensors",
+    "avg_time_since_change",
+    "avg_prev_state_duration",
+    "dow",
+    "time_bucket",
+    "dow_time_bucket",
+    "is_weekend",
+    "is_holiday",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "roll_occ_rate_4",
+    "roll_turnover_4",
+    "roll_occ_rate_12",
+    "roll_turnover_12",
+    "roll_occ_rate_24",
+    "roll_turnover_24",
+    "roll_departure_rate_4",
+    "occupancy_lag_1",
+    "occupancy_lag_4",
+    "occupancy_lag_12",
+    "occupancy_lag_96"
+  ],
+  "feature_order_hash": "8b6c3246a2cce1fb019d55698edbd7c9fd307d89b31b31e4b8706e5f099d8a34",
+  "fictional": true,
+  "row_counts": {
+    "test": 192,
+    "train": 672,
+    "val": 192
+  },
+  "schema_version": "phase7_load_core_plus_lags_v1",
+  "seed": 104729,
+  "synthetic_only": true
+}

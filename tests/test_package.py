@@ -27,8 +27,15 @@ class PackageTests(unittest.TestCase):
         forbidden = re.compile(r"(?i)([A-Z]:\\Users\\|/home/|/Users/)")
         offenders = []
         excluded_directories = {
-            "node_modules", "dist", "__pycache__", ".pytest_cache",
-            ".determinism-a", ".determinism-b", ".tmp-tests",
+            ".venv",
+            ".flower-runtime",
+            "node_modules",
+            "dist",
+            "__pycache__",
+            ".pytest_cache",
+            ".determinism-a",
+            ".determinism-b",
+            ".tmp-tests",
         }
         for path in ROOT.rglob("*"):
             relative_parts = path.relative_to(ROOT).parts

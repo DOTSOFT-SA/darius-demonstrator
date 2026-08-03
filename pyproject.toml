@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "darius-flower-demonstrator"
-version = "1.0.0"
+version = "0.1.0"
 description = "Synthetic-only DARIUS federated learning demonstrator"
 license = "MIT"
 requires-python = ">=3.10"

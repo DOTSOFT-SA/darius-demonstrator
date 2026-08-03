@@ -1,14 +1,15 @@
 # Release readiness
 
-Final recommendation: **READY FOR THE FIRST TAGGED RELEASE AFTER REVIEW AND MERGE TO `main`**.
+Final recommendation: **READY FOR THE FIRST TAGGED RELEASE**.
 
-DOTSOFT S.A. has authorised publication of this controlled candidate under the
-MIT License at
-`https://github.com/DOTSOFT-SA/darius-demonstrator`. The complete candidate is
-published on the public GitHub publication branch. Private vulnerability
-reporting is enabled, and clean public-clone dependency, reproduction, Flower,
-test, browser, release-content scan, and npm audit checks have passed. The candidate now awaits review,
-merge to `main`, and creation of the `v0.1.0` release.
+DOTSOFT S.A. has authorised publication of this controlled demonstrator under
+the MIT License at
+`https://github.com/DOTSOFT-SA/darius-demonstrator`. The reviewed publication
+candidate has been merged into `main`. Private vulnerability reporting is
+enabled, and clean public-clone dependency, reproduction, Flower, test, browser,
+release-content scan, and npm audit checks have passed. The project now awaits
+creation of the `v0.1.0` tag and corresponding GitHub release from the final
+verified `main` commit.
 
 ## Included component inventory
 
@@ -35,9 +36,10 @@ SPDX identifier. DOTSOFT S.A. has authorised publication under these terms.
 ## Repository status
 
 **Resolved.** The canonical repository is public at
-`https://github.com/DOTSOFT-SA/darius-demonstrator`. The final release evidence
-must reference the commit containing this complete candidate rather than the
-initial license-only commit.
+`https://github.com/DOTSOFT-SA/darius-demonstrator`. The publication candidate
+was merged through public PR #1. The initial publication merge commit is
+`012ec30bc69647031731311eac5b3aad0b3635e5`. The `v0.1.0` tag will reference
+the final verified `main` commit after this readiness update is merged.
 
 ## Synthetic-data provenance
 
@@ -85,15 +87,16 @@ authentication, and deployment hardening remain required outside loopback.
 
 ## Completed pre-release gates
 
-1. The complete candidate is published on the public GitHub publication branch.
+1. The complete demonstrator is publicly available in the canonical GitHub repository.
 2. GitHub private vulnerability reporting is enabled and monitored by authorised DOTSOFT R&D DARIUS maintainers.
 3. Clean public-clone dependency, test, Flower, browser, audit, and reproduction checks passed on 2026-08-03.
 4. Version metadata is aligned to `0.1.0`.
+5. Publication PR #1 was merged into `main`.
 
 ## Remaining release actions
 
-1. Complete review and merge the publication PR into `main`.
-2. Tag the reviewed merge commit as `v0.1.0`.
+1. Verify the final post-merge `main` commit from a fresh clone.
+2. Tag that verified commit as `v0.1.0`.
 3. Publish the corresponding GitHub release.
 
 ## Question 10 evidence references
@@ -101,8 +104,10 @@ authentication, and deployment hardening remain required outside loopback.
 | Evidence | Exact reference |
 |---|---|
 | GitHub URL | `https://github.com/DOTSOFT-SA/darius-demonstrator` |
+| Publication PR | `https://github.com/DOTSOFT-SA/darius-demonstrator/pull/1` |
+| Initial publication merge | `012ec30bc69647031731311eac5b3aad0b3635e5` |
 | License | `MIT License — LICENSE` |
-| Release | `v0.1.0 — to be created from the reviewed main-branch merge commit` |
+| Release | `v0.1.0 — to be created from the final verified main commit` |
 | README | `README.md` |
 | Synthetic data | `synthetic-data/generated/` and `synthetic-data/manifests/manifest.json` |
 | Contribution process | `CONTRIBUTING.md` |
